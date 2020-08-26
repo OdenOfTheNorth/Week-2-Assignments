@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
+
 public class UnitHealth : MonoBehaviour
 {
     [SerializeField] private float maxHealth = 100.0f;
@@ -43,4 +43,6 @@ public class UnitHealth : MonoBehaviour
             currentHealth = maxHealth;
         }
     }
+    
+    
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class HitscanShoot : MonoBehaviour
 {
-    
+    /*
     public Transform origin;
     public LayerMask HitLayers;
     public float damage = 50f;
@@ -43,5 +43,5 @@ public class HitscanShoot : MonoBehaviour
             {
                 laser.SetPosition(1, origin.position + (origin.right * 20.0f));
             }
-    }
+    }*/
 }
