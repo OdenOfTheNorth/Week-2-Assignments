@@ -3,13 +3,10 @@
 
 public class UnitHealth : MonoBehaviour
 {
-    [SerializeField] private float maxHealth = 100.0f;
+    [SerializeField] public float maxHealth = 100.0f;
 
-    private float currentHealth = 0.0f;
-
+    public float currentHealth = 0.0f;
     public delegate void UnitDied();
-    public UnitDied OnUnitDied;
-
     public delegate void HealthChanged(float maxHealth, float currentHeatlh);
     public HealthChanged OnHealthChanged;
 
@@ -18,31 +15,19 @@ public class UnitHealth : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    void Update()
-    {
-        /*
-        if (healthRegeneration > Mathf.Epsilon)
-        {
-            TakeDamage(-healthRegeneration * Time.deltaTime);
-        }
-        */
-    }
-
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
         OnHealthChanged?.Invoke(maxHealth, currentHealth);
 
-
         if (currentHealth <= 0.0f)
         {
-            OnUnitDied?.Invoke();
+            Destroy(gameObject);
+            //OnUnitDied?.Invoke();
         }
         else if (currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
         }
     }
-    
-    
 }

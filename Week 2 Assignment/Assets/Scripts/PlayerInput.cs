@@ -7,13 +7,11 @@ public class PlayerInput : MonoBehaviour
     public CharacterController controller;
     public float moveSpeed = 12f;
 
-    private HitscanShoot shot;
+    private Gun gun;
     
     private void Awake()
     {
-        //movement = GetComponent<Movement>();
-        shot = GetComponent<HitscanShoot>();
-
+        //gun = GetComponent<Gun>();
     }
 
     private void Update()
@@ -24,11 +22,5 @@ public class PlayerInput : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(moveSpeed * Time.deltaTime * move);
-        
-        if (Input.GetButtonDown("Fire1"))
-        {
-            //shot.fire();
-        }
-
     }
 }
