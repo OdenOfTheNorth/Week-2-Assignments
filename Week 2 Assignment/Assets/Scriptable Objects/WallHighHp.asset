@@ -15,3 +15,4 @@ MonoBehaviour:
   maxHealth: 25
   material: {fileID: 2100000, guid: 62c4dcc1887c410419852672ceeca446, type: 2}
   damageSound: {fileID: 8300000, guid: a5d9139c2a1e29345bd5dc0ac52b6342, type: 3}
+  deathSound: {fileID: 8300000, guid: 09a22240d3306d944b530ee4c453a459, type: 3}

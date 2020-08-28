@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
-using UnityEngine.Serialization;
+﻿using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
@@ -13,7 +8,8 @@ public class Gun : MonoBehaviour
     public Transform barrelEnd;
 
     private float maxDamage;
-
+    
+    
     private void Awake()
     {
         maxDamage = damage;
@@ -31,7 +27,7 @@ public class Gun : MonoBehaviour
     {
         RaycastHit[] hits;
         hits = (Physics.RaycastAll(barrelEnd.transform.position, barrelEnd.transform.forward, range));
-        GameObject[] objects = new GameObject[hits.Length];
+        GameObject[] wallHits = new GameObject[hits.Length];
         
         if (hits.Length <= 0)
         {
@@ -40,16 +36,20 @@ public class Gun : MonoBehaviour
 
         for (int i = 0; i < hits.Length; i++)
         {
-            objects[i] = hits[i].collider.gameObject;
+            wallHits[i] = hits[i].collider.gameObject;
         }
 
-        objects = SortByDistance(objects);
+        wallHits = SortByDistance(wallHits);
 
-        for (int i = 0; i < objects.Length; i++)
+        for (int i = 0; i < wallHits.Length; i++)
         {
             float temp;
-            Wall hitUnit = objects[i].transform.GetComponent<Wall>();
+            Wall hitUnit = wallHits[i].transform.GetComponent<Wall>();
             temp = hitUnit.currentHealth;
+            if (damage <= 0)
+            {
+                damage = 0;
+            }
             hitUnit.TakeDamage(damage);
             damage -= temp;
         }

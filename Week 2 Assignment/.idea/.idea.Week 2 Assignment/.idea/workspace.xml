@@ -31,6 +31,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wall_Info.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/49F4E7E7-91CC-4FFF-ACD8-8F729E2B1E4C/8e/ae95487d/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -38,15 +39,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/COUNTERACTGRAVITY.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShootingThroughWalls.cs" />
         <option value="$PROJECT_DIR$/Assets/Input.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CounterGravity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HitscanShoot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WallStuff.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Walls.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnitHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WallInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Wall_Info.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CounterGravity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Wall.cs" />
       </list>
     </option>
@@ -105,6 +106,7 @@
       <workItem from="1598536673550" duration="84000" />
       <workItem from="1598536826703" duration="5000" />
       <workItem from="1598600656206" duration="8571000" />
+      <workItem from="1598610365259" duration="5817000" />
     </task>
     <servers />
   </component>

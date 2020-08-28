@@ -1,19 +1,15 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-
-[RequireComponent(typeof(AudioSource))]
 public class Wall : MonoBehaviour
 {
     public Wall_Info wallInfo;
     public float currentHealth = 0.0f;
-    public delegate void HealthChanged(float maxHealth, float currentHeatlh);
-    public HealthChanged OnHealthChanged;
     
     private Material material;
     private float maxHealth;
     private GameObject objectToReplaceMaterial;
     private AudioClip damageSound;
+    private AudioClip deathSound;
 
     private void Start()
     {
@@ -23,29 +19,31 @@ public class Wall : MonoBehaviour
     private void Awake()
     {
         damageSound = wallInfo.damageSound;
+        deathSound = wallInfo.deathSound;
         material = wallInfo.material;
         maxHealth = wallInfo.maxHealth;
         currentHealth = maxHealth;
         objectToReplaceMaterial = gameObject;
         objectToReplaceMaterial.GetComponent<MeshRenderer> ().material = material;
-       
-
-    }
-
-    private void Update()
-    {
-
     }
 
     public void TakeDamage(float damage)
     {
-
+        var temp = currentHealth;
         currentHealth -= damage;
-        OnHealthChanged?.Invoke(maxHealth, currentHealth);
+        
+        if (currentHealth == temp)
+        {
+         return;   
+        }
+        if (currentHealth > 0)
+        {
+            AudioSource.PlayClipAtPoint(damageSound, transform.position);
+        }
         
         if (currentHealth <= 0.0f)
         {
-            AudioSource.PlayClipAtPoint(damageSound, transform.position);
+            AudioSource.PlayClipAtPoint(deathSound, transform.position);
             Destroy(gameObject);
             
         }

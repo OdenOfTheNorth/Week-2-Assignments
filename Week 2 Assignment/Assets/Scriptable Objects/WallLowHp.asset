@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69817c2e4220585449093f9bf8c260e0, type: 3}
   m_Name: WallLowHp
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 20
   material: {fileID: 2100000, guid: a7e6da1518447b4408af71cc2b7e3e55, type: 2}
   damageSound: {fileID: 8300000, guid: d8c1209391bfbdf458bfa04ae7ba0312, type: 3}
+  deathSound: {fileID: 8300000, guid: e1359cd0e2b26d749aad4b699ac6b27d, type: 3}
