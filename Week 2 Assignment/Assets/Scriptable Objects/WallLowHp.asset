@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   material: {fileID: 2100000, guid: a7e6da1518447b4408af71cc2b7e3e55, type: 2}
+  damageSound: {fileID: 8300000, guid: d8c1209391bfbdf458bfa04ae7ba0312, type: 3}

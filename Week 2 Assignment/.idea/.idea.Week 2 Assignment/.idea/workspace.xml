@@ -46,8 +46,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UnitHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WallInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gun.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Wall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Wall_Info.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Wall.cs" />
       </list>
     </option>
   </component>
@@ -104,7 +104,7 @@
       <workItem from="1598517263656" duration="12765000" />
       <workItem from="1598536673550" duration="84000" />
       <workItem from="1598536826703" duration="5000" />
-      <workItem from="1598600656206" duration="3770000" />
+      <workItem from="1598600656206" duration="8571000" />
     </task>
     <servers />
   </component>

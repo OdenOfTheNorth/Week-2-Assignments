@@ -7,4 +7,5 @@ public class Wall_Info : ScriptableObject
 {
     public float maxHealth = 100.0f;
     public Material material;
+    public AudioClip damageSound;
 }
