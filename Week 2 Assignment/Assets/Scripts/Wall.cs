@@ -1,18 +1,25 @@
 ﻿using UnityEngine;
 
 
-public class UnitHealth : MonoBehaviour
+public class Wall : MonoBehaviour
 {
-    [SerializeField] public float maxHealth = 100.0f;
-
+    public Wall_Info wallInfo;
     public float currentHealth = 0.0f;
-    public delegate void UnitDied();
     public delegate void HealthChanged(float maxHealth, float currentHeatlh);
     public HealthChanged OnHealthChanged;
+    
+    private Material material;
+    private float maxHealth;
+    private GameObject objectToReplaceMaterial;
 
+    
     private void Awake()
     {
+        material = wallInfo.material;
+        maxHealth = wallInfo.maxHealth;
         currentHealth = maxHealth;
+        objectToReplaceMaterial = gameObject;
+        objectToReplaceMaterial.GetComponent<MeshRenderer> ().material = material;
     }
 
     public void TakeDamage(float damage)
@@ -23,7 +30,6 @@ public class UnitHealth : MonoBehaviour
         if (currentHealth <= 0.0f)
         {
             Destroy(gameObject);
-            //OnUnitDied?.Invoke();
         }
         else if (currentHealth > maxHealth)
         {

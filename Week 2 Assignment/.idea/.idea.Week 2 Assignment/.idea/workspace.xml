@@ -29,7 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnitHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wall_Info.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gun.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -42,8 +42,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HitscanShoot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WallStuff.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Walls.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnitHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WallInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Wall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Wall_Info.cs" />
       </list>
     </option>
   </component>
@@ -100,6 +104,7 @@
       <workItem from="1598517263656" duration="12765000" />
       <workItem from="1598536673550" duration="84000" />
       <workItem from="1598536826703" duration="5000" />
+      <workItem from="1598600656206" duration="3770000" />
     </task>
     <servers />
   </component>
@@ -122,5 +127,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="0" width="1674" height="1027" maximized="true" key="dock-window-1" timestamp="1598602378544">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" width="1674" height="1027" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1598602378544" />
   </component>
 </project>

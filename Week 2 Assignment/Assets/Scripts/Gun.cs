@@ -48,7 +48,7 @@ public class Gun : MonoBehaviour
         for (int i = 0; i < objects.Length; i++)
         {
             float temp;
-            UnitHealth hitUnit = objects[i].transform.GetComponent<UnitHealth>();
+            Wall hitUnit = objects[i].transform.GetComponent<Wall>();
             temp = hitUnit.currentHealth;
             hitUnit.TakeDamage(damage);
             damage -= temp;
